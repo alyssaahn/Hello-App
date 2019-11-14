@@ -1,7 +1,20 @@
 <html>
 <head>
 <body background="https://media.giphy.com/media/l0JMaNj0xZ6cDFLvq/giphy.gif">
-  
+<button onclick="messaging()"> Talk to me! </button>
+
+<script>
+
+function messaging(){
+    var response = prompt("What is on your mind?");
+    if (response == ""){
+        alert("can we do better?")
+    }
+    else{
+        alert(response + " o h  m y ?");
+    }
+}
+</script>
 </body>
 <script type ="text/Javascript">
 
@@ -24,7 +37,26 @@
 <title> Howdy! Eggs Yo!</title>
 <h1> Howdy! Eggs Yo!</h1>
 <p>eggs eggs eggs eggs</p>
+<p><a href="eggbert">Jump to Howdy Boi</a> </p>
 <a href = "https://www.google.com/search?q=eggs&rlz=1C5CHFA_enUS858US858&oq=eggs&aqs=chrome..69i57j0l2j69i60l3.1492j0j7&sourceid=chrome&ie=UTF-8"> Eggs google search</a>
+<style>
+    a:link{
+        color: red;
+        background-color: transparent;
+        text-decoration: italic;
+        }
+    a:visited{
+        color: green;
+        background-color: transparent;
+        text-decoration: italic;
+        }
+    a:hovered{
+        color: orange;
+        background-color: transparent;
+        text-decoration: italic;
+        }
+    
+</style>
 <p style="color:red"> yeehaw in red </p>
 <hr>
 <h2> menos huevos aquí</h2>
@@ -34,6 +66,8 @@
 
 <img src="/assets/yoooo.jpg" width = "600" height="500" id="eggboi">
 <style>
+
+
 #eggbert{
     border: 50px solid slateblue;
     margin: 50px;
