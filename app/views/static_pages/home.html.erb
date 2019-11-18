@@ -12,12 +12,12 @@
 function messaging(){
     var response = prompt("What is on your mind?");
     if (response == "" || response == null){
-        document.getElementById(inputVal) = "can we do better ?"
+        alert("can we do better ?")
     }
     else{
-        document.getElementById(inputVal) = response + " o h  m y "
+        alert(response + " o h  m y ")
     }
-
+    document.getElementById("inputVal") = response;
 }
 
 var x = document.getElementById("yike");
