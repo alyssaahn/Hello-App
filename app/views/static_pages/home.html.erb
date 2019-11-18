@@ -2,7 +2,10 @@
 <head>
 <body background="https://media.giphy.com/media/l0JMaNj0xZ6cDFLvq/giphy.gif">
 <button onclick="messaging()"> Talk to me! </button>
-
+<button onclick="yikes()"> uh-oh </button>
+<audio id="yike">
+    <source src="/assets/uhoh.mp3" type="audio/mpeg">
+</audio>
 
 <script>
 
@@ -15,58 +18,7 @@ function messaging(){
         alert(response + " o h  m y ?");
     }
 }
-</script>
 
-<button onclick="blackBoxCalculator()"> Shady math </button>
-<script>
-function blackBoxCalculator(){
-    var num1 = prompt("Enter a number: ");
-    var num2 = prompt("Enter another number: ");
-    var point1 = parseFloat(num1,10);
-    var point2 = parseFloat(num2,10);
-    if (point2 == 0.0){
-        var randomint = Math.floor((Math.random()*3)+1);
-        if (randomint == 1){
-            var answer = point1 + point2;
-            alert(num1 + " added to "+ num2 " yields "+ answer);
-        }
-        else if(randomint ==2){
-            var answer = point1 - point2;
-            alert(num1 + " minus "+ num2 " yields "+ answer);
-        }
-        else{
-            var answer =  point1 * point2;
-            alert(num1 + " times "+ num2 " yields "+ answer);
-        }
-    }
-    else{
-        var randomint = Math.floor((Math.random()*4)+1);
-        if (randomint == 1){
-            var answer = point1 + point2;
-            alert(num1 + " added to "+ num2 " yields "+ answer);
-        }
-        else if(randomint ==2){
-            var answer = point1 - point2;
-            alert(num1 + " minus "+ num2 " yields "+ answer);
-        }
-        else if (randomint ==3){
-            var answer =  point1 * point2;
-            alert(num1 + " times "+ num2 " yields "+ answer);
-        }
-        else{
-            var answer point1/point2{
-                alert(num1 + " divided by "+ num2 " yields "+ answer)
-            }
-        }
-    }
-    
-}
-</script>
-<button onclick="yikes()"> uh-oh </button>
-<audio id="yike">
-    <source src="/assets/uhoh.mp3" type="audio/mpeg">
-</audio>
-<script>
 var x = document.getElementById("yike");
 function yikes(){
     x.play();
