@@ -6,19 +6,18 @@
 <audio id="yike">
     <source src="/assets/uhoh.mp3" type="audio/mpeg">
 </audio>
-
+<p id="inputVal"></p>
 <script>
 
 function messaging(){
     var response = prompt("What is on your mind?");
-    document.getElementById("response").innerHTML = response;
     if (response == "" || response == null){
-        alert("can we do better?")
+        document.getElementById(inputVal) = "can we do better ?"
     }
     else{
-        alert(response + " o h  m y ?");
+        document.getElementById(inputVal) = response + " o h  m y "
     }
-    Console.log(response);
+
 }
 
 var x = document.getElementById("yike");
