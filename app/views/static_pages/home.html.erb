@@ -109,11 +109,12 @@ src="//assets.adobedtm.com/50a0cd88cb00/8756cc3c54c0/launch-263d5b227d34-develop
 
 
 <button class="corduroy" id="1" onclick=onPress()> 1 </button>
-<p id="demo"></p>
+<button class="corduroy" id="2" onclick=onPress()> 2 </button>
+<p id="equation"></p>
 <script>
     function onPress(){
-    var input=document.getElementsByClassName("corduroy")[0].id;
-    document.getElementById("demo").innerHTML = input;
+    var input=document.getElementsByClassName("corduroy")[1].id; // changing the value of the array entry will determine what will override
+    document.getElementById("equation").innerHTML = input;
     alert(input);
     }
     
