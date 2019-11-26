@@ -108,11 +108,13 @@ src="//assets.adobedtm.com/50a0cd88cb00/8756cc3c54c0/launch-263d5b227d34-develop
 
 
 
-<button onclick=onPress() id="one"> 1 </button>
-
+<button class="corduroy" id="1" onclick=onPress()> 1 </button>
+<p id="demo"></p>
 <script>
     function onPress(){
-    <input type=text name="fval" value=document.getElementById(id)>
+    var input=document.getElementsByClassName("corduroy")[0].id;
+    document.getElementById("demo").innerHTML = input;
+    alert(input);
     }
     
 </script>
